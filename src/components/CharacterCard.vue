@@ -27,13 +27,13 @@
 @use '../styles/partials/variables' as *;
 .sc-card {
   text-align: center;
-  background-color: $primary-color;
-  width: 224px;
-  padding-bottom: 30px;
-  padding-top: 20px;
-  margin: 10px;
+  background-color: #2E3946;
+  width: 212px;
+  padding-bottom: 21px;
+  padding-top: 14px;
+  margin: 20px auto;
   img {
-    width: 180px;
+    width: 170px;
   }
   h3 {
     color: $secondary-color;

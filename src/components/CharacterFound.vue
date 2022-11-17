@@ -15,5 +15,6 @@
     background-color: #202528;
     color: #ffffff;
     padding: 10px 15px;
+    width: 100%;
   }
 </style>

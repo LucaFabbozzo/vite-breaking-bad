@@ -21,6 +21,7 @@ export default {
     <div v-if="store.isLoaded" class="row">
       <CharacterCard 
       v-for="character in store.charactersListData" 
+      v-show="character.img != '' "
       :key="character.char_id"
       :character="character"
       />
