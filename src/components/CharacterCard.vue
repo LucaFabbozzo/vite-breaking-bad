@@ -44,9 +44,10 @@
   }
 
   p {
-    color: #535458;
+    color: #717171;
     margin: 0;
-    font-weight: lighter;
+    font-size: 0.9rem;
+    font-family: 'Syne Mono', monospace;
   }
 }
 

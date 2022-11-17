@@ -22,5 +22,6 @@
   h1 {
     display: inline-block;
     color: $secondary-color;
+    font-family: 'Syne Mono', monospace;
   }
 </style>
