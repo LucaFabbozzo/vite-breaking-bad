@@ -8,12 +8,14 @@
   </script>
 
 <template>
-  <div class="sc-card">
+  <!-- img status -->
+  <div class="sc-card col-3">
+    <img :src="character.img" :alt="character.name">
     {{character.name}}
   </div>
 </template>
 
 
-<style>
+<style lang="scss" scoped>
 
 </style>

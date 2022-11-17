@@ -14,12 +14,14 @@ export default {
   </script>
 
 <template>
-  <div class="container-cards">
-    <CharacterCard 
-    v-for="character in store.charactersListData" 
-    :key="character.char_id"
-    :character="character"
-    />
+  <div class="container container-cards">
+    <div class="row">
+      <CharacterCard 
+      v-for="character in store.charactersListData" 
+      :key="character.char_id"
+      :character="character"
+      />
+    </div>
   </div>
 </template>
 
