@@ -1,10 +1,11 @@
   <script>
 import { store } from '../data/store';
 import CharacterCard from './CharacterCard.vue'
+import CharacterFound from './CharacterFound.vue'
 
 export default {
   name: 'CharacterList',
-  components: { CharacterCard },
+  components: { CharacterCard, CharacterFound },
   data() {
     return {
       store
@@ -14,7 +15,8 @@ export default {
   </script>
 
 <template>
-  <div class="container container-cards">
+  <div class="container py-5 container-cards">
+    <CharacterFound />
     <div class="row">
       <CharacterCard 
       v-for="character in store.charactersListData" 
