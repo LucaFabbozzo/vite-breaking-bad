@@ -2,10 +2,11 @@
 import { store } from '../data/store';
 import CharacterCard from './CharacterCard.vue'
 import CharacterFound from './CharacterFound.vue'
+import AppLoading from './AppLoading.vue'
 
 export default {
   name: 'CharacterList',
-  components: { CharacterCard, CharacterFound },
+  components: { CharacterCard, CharacterFound, AppLoading },
   data() {
     return {
       store
@@ -25,7 +26,7 @@ export default {
       />
     </div>
     <div v-else>
-      Loading....
+      <AppLoading />
     </div>
   </div>
 </template>
