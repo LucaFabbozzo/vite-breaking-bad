@@ -31,8 +31,8 @@ export default {
   .container-cards {
     background-color: $secondary-color;
     width: 100%;
+    padding-right: 45px;
+    padding-left: 45px;
   }
-  li {
-    color: black;
-  }
+
 </style>
