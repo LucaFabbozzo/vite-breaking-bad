@@ -1,3 +1,5 @@
+@use './partials/_variables' as *;
+
 @import 'node_modules/bootstrap/scss/bootstrap';
 @import 'node_modules/@fontsource/lato/index.css';
 @import 'node_modules/bootstrap/scss/bootstrap';
@@ -6,4 +8,10 @@
 
 body {
   font-family: "Lato", sans-serif;
+  background-color: $primary-color;
+}
+
+header {
+  width: 95%;
+  margin: 0 auto;
 }
