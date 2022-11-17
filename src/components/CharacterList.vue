@@ -17,12 +17,15 @@ export default {
 <template>
   <div class="container py-5 container-cards">
     <CharacterFound />
-    <div class="row">
+    <div v-if="store.isLoaded" class="row">
       <CharacterCard 
       v-for="character in store.charactersListData" 
       :key="character.char_id"
       :character="character"
       />
+    </div>
+    <div v-else>
+      Loading....
     </div>
   </div>
 </template>
