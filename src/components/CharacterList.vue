@@ -1,12 +1,23 @@
   <script>
-  export default {
-    name: 'CharacterList'
+import { store } from '../data/store';
+
+export default {
+  name: 'CharacterList',
+  data() {
+    return {
+      store
+    }
   }
+}
   </script>
 
 <template>
   <div class="container-cards">
-    <div class="found">Found 62 characters</div>
+    <ul>
+      <li v-for="character in store.charactersListData" :key="character.char_id">
+        {{character.name}}
+      </li>
+    </ul>
   </div>
 </template>
 
@@ -16,10 +27,8 @@
   .container-cards {
     background-color: $secondary-color;
     width: 100%;
-   .found {
-    background-color: $primary-color;
-    color: $secondary-color;
-    height: 40px;
-   }
+  }
+  li {
+    color: black;
   }
 </style>
