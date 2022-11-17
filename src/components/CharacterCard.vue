@@ -30,9 +30,10 @@
   background-color: $primary-color;
   width: 224px;
   padding-bottom: 30px;
+  padding-top: 20px;
   margin: 10px;
   img {
-    width: 160px;
+    width: 180px;
   }
   h3 {
     color: $secondary-color;
