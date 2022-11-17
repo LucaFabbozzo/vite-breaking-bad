@@ -5,7 +5,7 @@
   </script>
 
 <template>
-  <h1>S</h1>
+  <p>Select Category</p>
 </template>
 
 

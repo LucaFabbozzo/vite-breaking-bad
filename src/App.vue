@@ -1,20 +1,42 @@
-  
+
 <script>
 import AppHeader from './components/AppHeader.vue'
 import AppSearch from './components/AppSearch.vue'
 import CharacterList from './components/CharacterList.vue';
+import { axios } from 'axios';
   
-  export default {
+export default {
   name: 'App',
-  components: { AppHeader, AppSearch, CharacterList }
+  components: { AppHeader, AppSearch, CharacterList },
+  data() {
+    return {
+
+    }
+  },
+  methods: {
+    getCharacters() {
+      // https://www.breakingbadapi.com/api/characters
+      axios.get('https://www.breakingbadapi.com/api/characters')
+        .then(result => {
+          console.log(result.data);
+        })
+        .catch(error => {
+          console.log(error);
+        })
+    }
+  },
+  mounted() {
+    this.getCharacters();
   }
-  </script>
+}
+
+</script>
 
 <template>
     <header>
       <AppHeader title="Breacking Bad Api"/> 
     </header>
-    <div class="container">
+    <div class="container m-auto my-4 w-75">
       <main>
         <AppSearch/>
         <CharacterList/>
