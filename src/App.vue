@@ -27,6 +27,8 @@ export default {
            store.isLoaded = true;
         })
         .catch(error => {
+          store.charactersListData = [];
+          store.isLoaded = true;
           console.log(error);
         })
     }

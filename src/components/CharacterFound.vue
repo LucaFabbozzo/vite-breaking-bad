@@ -1,11 +1,25 @@
   <script>
-  export default {
-    name: 'CharacterFound'
+  import {store} from '../data/store'
+export default {
+  name: 'CharacterFound',
+  data() {
+    return {
+      store
+    }
+  },
+  computed: {
+    outputResult() {
+      if (store.charactersListData.length > 0) {
+        return store.charactersListData.length;
+      }
+      return 'No result'
+    }
   }
+}
   </script>
 
 <template>
-  <div class="found">Found 62 characters</div>
+  <div class="found">Found {{outputResult}} characters</div>
 </template>
 
 
