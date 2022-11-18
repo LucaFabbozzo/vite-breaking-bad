@@ -8,7 +8,7 @@
   </script>
 
 <template>
-    <img src="../assets/img/Breaking_Bad_logo.svg" alt="Logo">
+    <img src="../assets/img/logo.svg" alt="Logo">
     <h1>{{title}}</h1>
 </template>
 

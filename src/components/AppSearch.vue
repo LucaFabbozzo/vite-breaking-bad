@@ -29,7 +29,7 @@
         <button @click="$emit('startFilter')" class="btn btn-secondary">Search</button>
       </div>
       <div class="col-auto">
-        <button @click="reset()" class="btn btn-dark">Reset</button>
+        <button @click="reset()" class="btn btn-dark"><i class="fa-solid fa-rotate-left"></i></button>
       </div>
     </div>
   </div>
@@ -37,5 +37,7 @@
 
 
 <style lang="scss" scoped>
-  
+@use '../styles/partials/variables' as *;
+
+
 </style>
