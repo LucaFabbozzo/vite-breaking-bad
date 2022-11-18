@@ -17,7 +17,11 @@ export default {
   methods: {
     getCharacters() {
       store.isLoaded = false;
-       axios.get(store.apiUrl)
+      axios.get(store.apiUrl, {
+        params: {
+          category: store.categoryToSearch
+        }
+       })
          .then(result => {
            store.charactersListData = result.data;
            store.isLoaded = true;
@@ -40,7 +44,7 @@ export default {
     </header>
     <div class="container m-auto my-4 w-75">
       <main>
-        <AppSearch/>
+        <AppSearch @startFilter="getCharacters()"/>
         <CharacterList/>
       </main>
     </div>

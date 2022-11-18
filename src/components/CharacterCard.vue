@@ -17,7 +17,7 @@
   <div class="sc-card col-3">
     <img :src="character.img" :alt="character.name">
     <h3>{{character.name}}</h3>
-    <p>{{cardTitle}}</p>
+    <p>{{character.category}}</p>
     <p>{{character.status}}</p>
   </div>
 </template>
