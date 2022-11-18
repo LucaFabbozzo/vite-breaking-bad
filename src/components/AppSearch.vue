@@ -9,6 +9,7 @@
   methods: {
     reset() {
       store.categoryToSearch = '';
+      this.$emit('startFilter');
       }
     }
   }
