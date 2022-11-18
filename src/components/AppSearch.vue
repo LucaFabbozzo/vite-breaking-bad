@@ -26,10 +26,10 @@
       </select>
       </div>
       <div class="col-auto">
-        <button @click="$emit('startFilter')" class="btn btn-dark">Search</button>
+        <button @click="$emit('startFilter')" class="btn btn-secondary">Search</button>
       </div>
       <div class="col-auto">
-        <button @click="reset()" class="btn btn-light">Reset</button>
+        <button @click="reset()" class="btn btn-dark">Reset</button>
       </div>
     </div>
   </div>
@@ -37,5 +37,5 @@
 
 
 <style lang="scss" scoped>
-
+  
 </style>
