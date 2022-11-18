@@ -17,7 +17,7 @@
 
 <template>
   <div class="container">
-    <div class="row">
+    <div class="row py-5">
       <div class="col-auto">
         <select v-model="store.categoryToSearch" class="form-select" aria-label="Default select example">
         <option value="" selected>Select Series</option>
@@ -26,10 +26,10 @@
       </select>
       </div>
       <div class="col-auto">
-        <button @click="$emit('startFilter')" class="btn btn-info">Search</button>
+        <button @click="$emit('startFilter')" class="btn btn-dark">Search</button>
       </div>
       <div class="col-auto">
-        <button @click="reset()" class="btn btn-warning">Reset</button>
+        <button @click="reset()" class="btn btn-light">Reset</button>
       </div>
     </div>
   </div>
